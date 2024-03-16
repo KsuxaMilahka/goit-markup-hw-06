@@ -285,6 +285,8 @@ body {
 
     .mobile-menu-container {
         position: relative;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .mobile-menu-close-btn {
@@ -329,7 +331,7 @@ body {
 
     .mobile-nav-menu {
         padding-top: 72px;
-        padding-bottom: 168px;
+        margin-bottom: auto;
     }
 
     .mobile-nav-menu-list {
@@ -351,9 +353,14 @@ body {
         padding-bottom: 40px;
     }
 
+    .mobile-menu-item:first-child {
+        color: #404BBF;
+    }
+
+
     .mobile-contacts-list {
         width: 100%;
-        margin-bottom: 48px;
+        margin-bottom: auto;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
@@ -372,6 +379,10 @@ body {
 
     .mobile-contacts-list-item:not(:last-child) {
         padding-bottom: 24px;
+    }
+
+    .mobile-contacts-list-item:first-child {
+        color: #4D5AE5;
     }
 
     .mobile-social-list {
@@ -614,9 +625,15 @@ body {
     }
 
     .feature-list-item-title {
+        font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
     }
+
+    .feature-list-item-text {
+        font-weight: 400;
+    }
+
 }
 
 /* Section 3 team */
@@ -667,6 +684,7 @@ body {
 
 .team-list-text {
     color: #434455;
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -796,9 +814,11 @@ body {
 }
 
 .portfolio-list-text {
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    color: #434455;
 }
 
 .portfolio-overlay-text {
@@ -1000,7 +1020,7 @@ body {
     .footer-container {
         justify-content: flex-start;
         align-items: baseline;
-        padding-left: 108px;
+        max-width: 584px;
     }
 
     .footer-logo-text {
