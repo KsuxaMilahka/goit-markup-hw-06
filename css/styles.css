@@ -1052,6 +1052,7 @@ body {
     }
 
     .footer-container {
+        min-width: 1158px;
         gap: 0;
         padding-left: 15px;
     }
